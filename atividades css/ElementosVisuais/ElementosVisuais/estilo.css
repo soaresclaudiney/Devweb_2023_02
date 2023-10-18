@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image:url('cristo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+figure {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-top: 10px;
+}
