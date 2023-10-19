@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha de Dados </title>
+</head>
+
+<body>
+    <header>
+        <h1>Ficha de Dados </h1>
+    </header>
+    <article>
+        <form action="#">
+            <label for="cNome">Nome:</label><br />
+            <input type="text" size=50 name="tNome" id="cNome" required="required" />
+            <br /><br />
+            <p>qual e seu sexo :</p>
+            <input type="radio" name="tipo" id="sexy" value="C" />
+            <label for="cid">masculino</label><br />
+            <input type="radio" name="tipo" id="sexy" value="I" />
+            <label for="inter">feminino</label><br />
+            <br /><br />
+            <p>Qual seu tipo musicsl ?</p>
+            <input type="checkbox" id="music 1" name="music1" value="funk" />
+            <label for="funk1"> funk</label><br />
+            <input type="checkbox" id="music2" name="music2" value="pop" />
+            <label for="music2"> pop</label><br />
+            <input type="checkbox" id="music3" name="music3" value="rock" />
+            <label for="music3"> rock</label><br />
+            <input type="checkbox" id="music4" name="music" value="gospel" />
+            <label for="music4"> gospel</label> <br /><br />
+            <label for="t">Qual e sua cor favorita:</label>
+            <select id="t" name="t">
+                <option value="blue">azul</option>
+                <option value="red">vermelho</option>
+                <option value="black">preto</option>
+                <option value="white">branco</option>
+                <option value="yellon">amarelo</option>
+                <option value="green">verde</option>
+            </select><br /><br />
+            <label for="cCid">Escolha a unidade mais perto da IOS de voçê?:</label>
+            <input list="cidade" name="tCid" id="cCid" placeholder="Sua Cidade" />
+            <datalist id="cidade">
+                <option value="Santana"></option>
+                <option value="barueri"></option>
+                <option value="jardim angela "></option>
+                <option value="tucuruvi"></option>
+            </datalist><br /><br />
+            <p>Deixa sua nota de 0 a 05 nos comentarios :</p>
+            <textarea name="message" rows="10" cols="50" placeholder="Deixe aquia sua mensagem!" required> </textarea>
+            <br /><br />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </article>
+    <footer>
+        <small>@_menino_ney
+
+        </small>
+    </footer>
+</body>
+
+</html>
