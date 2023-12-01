@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Boas-Vindas</title>
+</head>
+<body>
+
+<script>
+    // Exibindo uma mensagem de boas-vindas
+    window.alert("Bem-vindo à minha página!");
+
+    // Obtendo e exibindo o título da página
+    var pageTitle = document.title;
+    window.alert("O título da página é: " + pageTitle);
+
+    // Criando elementos HTML
+    var sectionElement = document.createElement("section");
+    var articleElement = document.createElement("article");
+
+    // Adicionando conteúdo aos elementos
+    var sectionTitle = document.createElement("h1");
+    sectionTitle.textContent = "Título da Seção";
+    sectionElement.appendChild(sectionTitle);
+
+    var sectionParagraph = document.createElement("p");
+    sectionParagraph.textContent = "Conteúdo da Seção";
+    sectionElement.appendChild(sectionParagraph);
+
+    var articleTitle = document.createElement("h1");
+    articleTitle.textContent = "Título do Artigo";
+    articleElement.appendChild(articleTitle);
+
+    var articleParagraph = document.createElement("p");
+    articleParagraph.textContent = "Conteúdo do Artigo";
+    articleElement.appendChild(articleParagraph);
+
+    // Adicionando os elementos à estrutura da página
+    document.body.appendChild(sectionElement);
+    document.body.appendChild(articleElement);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Lista de Compras</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <form id="shoppingForm">
+      <div class="form-row">
+        <div class="col">
+          <label for="itemName">Item:</label>
+          <input type="text" class="form-control" id="itemName" required>
+        </div>
+        <div class="col">
+          <label for="itemQuantity">Quantidade:</label>
+          <input type="number" class="form-control" id="itemQuantity" required>
+        </div>
+        <div class="col">
+          <label for="itemPrice">Valor:</label>
+          <input type="number" class="form-control" id="itemPrice" step="0.01" required>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-success" onclick="addItem()">Add</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="mt-3">
+      <h5>Lista de Compras</h5>
+      <ul id="itemList" class="list-group">
+      </ul>
+    </div>
+
+    <div class="mt-3">
+      <h5>Total por Subitem</h5>
+      <ul id="subtotalList" class="list-group">
+        
+      </ul>
+      <h5 class="mt-3">Total Geral: <span id="totalGeral">0.00</span></h5>
+    </div>
+  </div>
+  <script src="manipulandoDompart5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
